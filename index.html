@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h4>Fill information about you and your cinema experience:</h4>
+  <form>
+    <div>
+      <label>
+        <span>Name:</span>
+        <input type="text" id="name" name="userName" placeholder="Введите свое имя" />
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>Birthday:</span>
+        <input type="date" name="birthday" id="userBirthday">
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>Email:</span>
+        <input type="email" id="email" name="userEmail" />
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>Blog:</span>
+        <input type="url" id="url" name="userUrl">
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>Genre:</span>
+        <input type="text" name="genre" id="userGenre" list="genreSuggestions"/>
+          <datalist id="genreSuggestions">
+              <option>Comedy</option>
+              <option>Horror</option>
+              <option>Drama</option>
+              <option>Thriller</option>
+              <option>Science Fiction</option>
+              <option>Fantasy</option>
+          </datalist>
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>How you rate yourself:</span>
+        <input type="number" name="userRating" id="rating" min="1" max="12" step="1">
+      </label>
+    </div>
+    <div>
+      <button type="submit">Send my data</button>
+    </div>
+  </form>
+</body>
+</html>
